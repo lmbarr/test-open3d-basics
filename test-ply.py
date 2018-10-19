@@ -3,7 +3,7 @@ from open3d import *
 
 if __name__ == "__main__":
 
-    pcd = read_triangle_mesh("/Users/--/PycharmProjects/test-open3d/datos.ply")
+    pcd = read_triangle_mesh("/Users/luis/PycharmProjects/test-open3d/datos.ply")
 
     triangle_mesh = TriangleMesh()
     triangle_mesh.vertices = Vector3dVector([[0, 0, 0],
@@ -20,6 +20,8 @@ if __name__ == "__main__":
                                 [5, 6, 2],
                                 [6, 7, 3],
                                 [7, 4, 0]])
+
+    triangle_mesh.paint_uniform_color([1, 0, 0])
 
 
     points = [[0, 0, 0], [1, 0, 0], [0, 1, 0], [1, 1, 0],
